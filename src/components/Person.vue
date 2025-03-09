@@ -4,7 +4,6 @@
 
 <script lang="ts" setup name="Person">//使用setup的语法糖
 
-
 </script>
 
 

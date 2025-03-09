@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts" setup name="Detail">//使用setup的语法糖
-// import { toRefs } from 'vue';
-// import {useRoute} from 'vue-router'
-// let router = useRoute()
+import { toRefs } from 'vue';
+import {useRoute} from 'vue-router'
+let router = useRoute()
 // console.log(router)
-// let {query} =toRefs(router)
+// let {params} =toRefs(router)
 defineProps(['id','title','content'])
 </script>
 <style scoped>

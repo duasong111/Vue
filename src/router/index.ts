@@ -8,7 +8,7 @@ import Detail from "@/pages/Detail.vue";
 
 //第二步：创建路由器
 const router = createRouter({
-    history:createWebHistory(),
+    history:createWebHistory(), 
     routes: [{
         name:'zhuye',
         path: '/home',
@@ -20,16 +20,22 @@ const router = createRouter({
         component:News,
         children:[
             {
-                name:'news_detal',
-                path:'details/:id/:title/:content?',  //使用params需要去占位
+                name:'news_detail',
+                path:'details',  //使用params需要去占位
                 component:Detail,
-                props:true
+                props(route){
+                    return route.query
+                }
             }
         ]
     }, {
         name:'guanyu',
         path: '/about',
         component: About
+    },
+    {
+        path: '/',
+        redirect:'/home'
     }
     ]
 })

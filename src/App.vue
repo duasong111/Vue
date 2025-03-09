@@ -4,9 +4,9 @@
     <!-- 导航区域 -->
     <div class="navicate">
       <!-- 来去实现页面的跳转功能 -->
-      <RouterLink to="/home" active-class="active">首页</RouterLink>
-      <RouterLink :to="{name:'xinwen'}" active-class="active">新闻</RouterLink>
-      <RouterLink :to="{path:'/about'}"active-class="active">关于</RouterLink>
+      <RouterLink replace to="/home" active-class="active">首页</RouterLink>
+      <RouterLink  replace :to="{name:'xinwen'}" active-class="active">新闻</RouterLink>
+      <RouterLink replace :to="{path:'/about'}"active-class="active">关于</RouterLink>
     </div>
     <!-- 展示区域 -->
      <div class="main-content">
