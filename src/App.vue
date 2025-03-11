@@ -1,22 +1,27 @@
 <template>
   <div class="app">
-    <h2 class="title">Vue路由测试</h2>
+    <Count></Count>
+    <hr>
+    <LoveTalk></LoveTalk>
+    <!-- <h2 class="title">Vue路由测试</h2> -->
     <!-- 导航区域 -->
-    <div class="navicate">
+    <!-- <div class="navicate"> -->
       <!-- 来去实现页面的跳转功能 -->
-      <RouterLink replace to="/home" active-class="active">首页</RouterLink>
+      <!-- <RouterLink replace to="/home" active-class="active">首页</RouterLink>
       <RouterLink  replace :to="{name:'xinwen'}" active-class="active">新闻</RouterLink>
       <RouterLink replace :to="{path:'/about'}"active-class="active">关于</RouterLink>
-    </div>
+    </div> -->
     <!-- 展示区域 -->
-     <div class="main-content">
+     <!-- <div class="main-content">
       <RouterView></RouterView>
-     </div>
+     </div> -->
   </div>
 </template>
 <script lang="ts" setup name="App">
 import {RouterView,RouterLink} from 'vue-router'
 
+import Count from './components/Count.vue';
+import LoveTalk from './components/LoveTalk.vue';
 </script>
 <style scoped>
 .title{
